@@ -20,6 +20,8 @@ This project requires Android Studio Canary build (get it [here](https://develop
 
 Everything is the default from **Empty Activity** provided by Android Studio (Canary build).
 
+The version that I used to make this project was **Android Studio Hedgehog | 2023.1.1 Canary 5** (Build #AI-231.7864.76.2311.10195651, built on May 25, 2023).
+
 
 ## Building the APK
 
