@@ -19,3 +19,10 @@ The character in the picture is **Vivid**, made by **Aziru** my friend on FB.
 This project requires Android Studio Canary build (get it [here](https://developer.android.com/studio/preview)).  I doubt the other versions would work.
 
 Everything is the default from **Empty Activity** provided by Android Studio (Canary build).
+
+
+## Building the APK
+
+Use Android Studio's Build APK menu.
+
+I had to update some of the deps to follow the template from Canary build (Material3) due to the build process constantly being interrupted by **:app:checkDebugDuplicateClasses**.
