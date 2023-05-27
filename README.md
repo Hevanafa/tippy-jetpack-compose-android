@@ -18,4 +18,4 @@ The character in the picture is **Vivid**, made by **Aziru** my friend on FB.
 
 This project requires Android Studio Canary build (get it [here](https://developer.android.com/studio/preview)).  I doubt the other versions would work.
 
-Everything is the default from **Empty Compose Project** or **Empty Activity** provided by Android Studio.
+Everything is the default from **Empty Activity** provided by Android Studio (Canary build).
