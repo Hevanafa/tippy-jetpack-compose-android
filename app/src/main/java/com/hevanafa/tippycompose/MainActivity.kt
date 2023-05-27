@@ -11,11 +11,12 @@ import androidx.compose.foundation.layout.absolutePadding
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Slider
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.material.TextField
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Slider
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
@@ -46,7 +47,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     Column {
                         TopImageRow()
@@ -99,6 +100,7 @@ class MainActivity : ComponentActivity() {
         )
     }
 
+    @OptIn(ExperimentalMaterial3Api::class)
     @Composable
     fun BaseAmountRow() {
         val pattern = remember { Regex("^\\d+\$" )}
@@ -168,9 +170,6 @@ class MainActivity : ComponentActivity() {
             Text("$%.2f".format(getBaseAmount() + getTipAmount()))
         }
     }
-
-
-
 }
 
 
